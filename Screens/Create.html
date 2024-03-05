@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CreateScreen.css">
+</head>
+
+<body>
+    <h1 class="main-heading">Personal Details Form</h1>
+    <form>
+    <div class="container">
+        <div class="name-field">
+                <p class="name-title">Name:</p>
+                <input id="name" name="name" class="name-input-box" type="text" placeholder="Enter Your Name">
+        </div>
+        <div>
+            <p class="address-title">Address:</p>
+            <textarea name="address" id="address" class="address-box" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <p class="gender-title">Gender: </p>
+                <select class="gender-box" name="gender" id="gender">
+                <option value=""></option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <button class="submit-btn">submit</button>
+    </div>
+    </form>
+    <div class="container-table">
+        <table>
+            <thead>
+                <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        const form = document.querySelector('form');    
+        const tbody = document.querySelector('tbody');
+        const table = document.querySelector('table');
+        function onAdd(e){
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+            const gender = document.getElementById('gender').value;
+            tbody.innerHTML += `
+            <tr>
+                <td>
+                    ${name}
+                </td>
+                <td>
+                    ${address}
+                </td>
+                <td>
+                    ${gender}
+                </td>
+                <td>
+                    <button class="delete-btn">Delete</button>
+                </td>
+            </tr>
+            `
+        }
+
+        function onDelete(e){
+            if(!e.target.classList.contains("delete-btn")) {
+                return;
+            }
+            const button = e.target;
+            button.closest("tr").remove();
+        }
+
+        form.addEventListener('submit', onAdd)
+        table.addEventListener('click', onDelete)
+    </script>
+</body>
+</html>
