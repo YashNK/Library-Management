@@ -46,7 +46,7 @@
                 <option value="Thriller">Thriller</option>
             </select>
         </div>
-        <button class="submit-btn">submit</button>
+        <button class="submit-btn" id="btn">submit</button>
     </div>
     </form>
     <div class="container-table">
@@ -69,48 +69,11 @@
             </thead>
             <tbody></tbody>
         </table>
+        <button id="subtn">Button</button>
     </div>
 
-    <script>
-        const form = document.querySelector('form');    
-        const tbody = document.querySelector('tbody');
-        const table = document.querySelector('table');
-        function onAdd(e){
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const address = document.getElementById('author').value;
-            const gender = document.getElementById('gender').value;
-            const publish = document.getElementById('date').value;
-
-            tbody.innerHTML += `
-            <tr>
-                <td>
-                    ${name}
-                </td>
-                <td>
-                    ${address}
-                </td>
-                <td>
-                    ${gender}
-                </td>
-                <td>
-                    ${publish}
-                </td>
-
-            </tr>
-            `
-        }
-
-        function onDelete(e){
-            if(!e.target.classList.contains("delete-btn")) {
-                return;
-            }
-            const button = e.target;
-            button.closest("tr").remove();
-        }
-
-        form.addEventListener('submit', onAdd)
-        table.addEventListener('click', onDelete)
+    <script src="../Javascript/makejson.js">
+        
     </script>
 </body>
 </html>
