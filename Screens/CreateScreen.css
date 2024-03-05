@@ -3,11 +3,18 @@ body{
     background-color: rgb(232, 232, 232);
     height: 100%;
     margin: 0px;
-    background-image: url("https://c0.wallpaperflare.com/preview/753/601/103/black-green-leaves-plants.jpg");
+    background-image: url("");
     background-size: cover;
 }
 
-
+.link{
+    color: white;
+}
+.navBar{
+    background-color: blue;
+    height: 50px;
+    align-items: center;
+}
 .container{
     background-color: white;
     color: white;
