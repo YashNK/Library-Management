@@ -1,0 +1,61 @@
+body{
+    width: 100%;
+    background-color: rgb(232, 232, 232);
+    height: 100%;
+    margin: 0px;
+    background-image: url("../assests/1353023.png");
+    background-size: cover;
+}
+.navBar{
+    padding: 10px 0px 0px 0px;
+    height: 50px;
+    align-items: center;
+    text-align: right;
+}
+.container-table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.container{
+    
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    
+}
+.authorLable{
+    text-align: center;
+    align-self: center;
+}
+table{
+    padding: 10px;
+    background-color: white;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 6px;
+}
+
+tr{
+    text-align: center;
+}
+tr, th{
+    border-bottom: 0.5px solid rgb(33, 255, 48);
+}
+
+.link{
+    color: rgb(233, 230, 230);
+    margin: 0px 17px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+.link2{
+    color: rgb(0, 23, 20);
+    margin: 0px 17px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+}
