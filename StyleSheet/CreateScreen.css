@@ -1,69 +1,219 @@
 body{
     width: 100%;
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(243, 243, 243);
     height: 100%;
     margin: 0px;
-    background-image: url("../assests/1353023.png");
+    background-image: url("https://printawallpaper.com/wp-content/uploads/2013/08/Blue_White_Polygonal_Mosaic_d.jpg");
     background-size: cover;
 }
 .man{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     position: absolute;
-    bottom: 0;
+    bottom: 58px;
     right: 0;
 }
-.link{
-    color: rgb(233, 230, 230);
-    margin: 0px 17px 0px 0px;
-    text-align: center;
-    text-decoration: none;
-}
-.link2{
-    color: rgb(0, 23, 20);
-    margin: 0px 17px 0px 0px;
-    text-align: center;
-    text-decoration: none;
-}
-.navBar{
-    padding: 10px 0px 0px 0px;
+.logo{
+    width: 50px;
     height: 50px;
+    position: absolute;
+    margin-left: 10px; 
+}
+.site-name{
+    font-size: 17px;
+    position: absolute;
+    margin-left: 60px; 
+    color: rgb(40, 140, 202);
+    font-weight: bold;
+    margin-top: 12px;
+}
+.link{
+    color: rgb(129, 129, 129);
+    margin: 0px 20px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link-active{
+    color: rgb(0, 140, 255);
+    margin: 0px 20px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+.nav-bar{
+    padding: 13px 0px 0px 0px;
+    height: 35px;
     align-items: center;
     text-align: right;
+    box-shadow: 0px 5px 20px 0px rgb(158, 158, 158);
+    margin-bottom: 30px;
+}
+.main-heading-top{
+    margin-left: 105px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 90px;
+    color: rgb(0, 60, 138);
+    line-height: 0px;
+
+}
+.main-heading-bottom{
+    line-height: 65px;
+    margin-left: 100px;
+    margin-bottom: 4px;
+    margin-right: 0px;
+    margin-top: 0px;
+    color: rgb(0, 60, 138);
+    font-size: 60px;
+}
+.sub-heading{
+    padding: 8px 0px 0px 102px;
+    width: 400px;
+}
+.container-label{
+    padding-top: 35px;
+    padding-left: 103px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: rgb(1, 33, 75);
 }
 .container{
+    display: inline-block;
     position: relative;
-    background-color: white;
+    background-color: rgb(87, 155, 173);
     color: white;
-    display: block;
-    margin-left: auto;
+    margin-left: 100px;
     margin-right: auto;
-    width: 35%;
+    width: 60%;
+    height: 320px;
     text-align: left;
     padding: 25px;
     border-radius: 10px;
-    margin-bottom: 35px;
-    background-image: url("../assests/6085221.jpg");
+    background-image: url("");
     background-size: cover;
-    bottom: 0px;
-    box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px 5px rgba(16, 197, 237, 0.2);
+}
+form{
+    display: inline-block;
+    width: 44%;
 }
 .container-table{
+    overflow: auto;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    vertical-align: top;
+    width: 49%;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 0px 30px 10px rgba(42, 11, 8, 0.2);
+    height: 650px;
+    padding: 20px;
+    border-radius: 10px;
 }
-.main-heading{
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top:15px;
+
+.name-title{
+    font-size:small ;
+    padding: 1px 1px 1px 1px;
+}
+
+.author-title, .date-title, .genre-title{
+    font-size:small ;
+    padding: 10px 1px 1px 1px;
+}
+
+.name-input-box{
+  position: relative;
+  border: 2px solid rgb(86, 255, 244);
+  transition: 0.5s;
+  outline: none;
+  cursor: text;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  width: 200px;
+  padding: 5px;
+}
+.author-input-box{
+    padding: 5px;
+    position: relative;
+    border: 2px solid rgb(86, 255, 244);
+    transition: 0.5s;
+    outline: none;
+    cursor: text;
+    margin-bottom: 8px;
+    border-radius: 10px;
+}
+.date-input-box{
+    padding: 5px;
+    position: relative;
+    border: 2px solid rgb(86, 255, 244);
+    transition: 0.5s;
+    outline: none;
+    cursor: text;
+    margin-bottom: 8px;
+    border-radius: 10px;
+}
+.genre-box{
+    padding: 5px;
+    position: relative;
+    border: 2px solid rgb(86, 255, 244);
+    transition: 0.5s;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.name-input-box:focus, .author-input-box:focus, .genre-box:focus, .date-input-box:focus{
+    border: 2px solid rgb(46, 85, 255);
+    border-radius: 5px;
+}
+.buttons{
+    display: inline-block;
+    width: 100%;
+}
+.submit-btn{
+    position: relative;
+    padding: 5px 15px 5px 15px;
+    margin-top: 10px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    transition: 0.3s;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.download-btn{
+    position: absolute;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35px;
+    background: none;
+    padding: 0px;
+    border: 0px;
+    transition: 0.3s;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.download-image{
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 20px;
+}
+.submit-btn:hover{
+    background-color: rgb(0, 187, 255);
+    font-size: 14px;
+    height: 50px;
     color: white;
 }
+
 table{
     padding: 10px;
     background-color: white;
-    height: 100%;
-    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -75,58 +225,21 @@ p{
 tr{
     text-align: center;
 }
-.name-input-box, .address-box{
-  position: relative;
-  border: 2px solid rgb(193, 255, 197);
-  transition: 0.5s;
-  outline: none;
-  cursor: text;
-  margin-bottom: 8px;
-  border-radius: 7px;
-  width: 200px;
-}
-.gender-box{
-  position: relative;
-  border: 2px solid rgb(193, 255, 197);
-  transition: 0.5s;
-  outline: none;
-  border-radius: 7px;
-  cursor: pointer;
-}
-.name-input-box:focus, .address-box:focus, .gender-box:focus{
-    border: 2px solid rgb(55, 255, 89);
-    border-radius: 5px;
-}
-.name-title, .address-title, .gender-title{
-    font-size:small ;
-}
-.submit-btn{
-    position: relative;
-    padding: 5px 15px 5px 15px;
-    margin-top: 10px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    border: 0px;
-    transition: 0.5s;
-    font-size: 12px;
-    cursor: pointer;
-    border-radius: 7px;
-}
-.submit-btn:hover{
-    background-color: rgb(55, 255, 89);
-    font-size: 14px;
-    height: 50px;
-}
-.delete-btn{
-    cursor: pointer;
-    background-color: white;
-    border: 0.5px solid rgb(66, 253, 78);
-    padding: 9px 20px 9px 20px;
-    border-radius: 20px;
-}
 tr, th{
-    border-bottom: 0.5px solid rgb(33, 255, 48);
+    border-bottom: 0.5px solid rgb(111, 222, 255);
+}
+
+.container-table::-webkit-scrollbar {
+    width: 12px;
+}
+
+.container-table::-webkit-scrollbar-track {
+    background-color: rgb(239, 239, 239);
+    -webkit-box-shadow: 0 0 6px rgba(245, 0, 0, 0.3); 
+    border-radius: 10px;
+}
+
+.container-table::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
