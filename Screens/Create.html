@@ -17,11 +17,11 @@
         </div>
         <div class="name-field">
             <p class="name-title">Author Name:</p>
-            <input id="name" name="name" class="name-input-box" type="text" placeholder="Enter Your Name">
+            <input id="author" name="name" class="name-input-box" type="text" placeholder="Enter Your Name">
         </div>
         
         <div>
-            <p class="gender-title">Author</p>
+            <p class="gender-title">Genre</p>
                 <select class="gender-box" name="gender" id="gender">
                 <option value=""></option>
                 <option value="male">Horror</option>
@@ -62,7 +62,7 @@
         function onAdd(e){
             e.preventDefault();
             const name = document.getElementById('name').value;
-            const address = document.getElementById('address').value;
+            const address = document.getElementById('author').value;
             const gender = document.getElementById('gender').value;
             tbody.innerHTML += `
             <tr>
