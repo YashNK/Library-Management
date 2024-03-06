@@ -1,0 +1,34 @@
+[
+  {
+    "genre": "Dystopian fiction",
+    "count": 2
+  },
+  {
+    "genre": "Classic literature",
+    "count": 1
+  },
+  {
+    "genre": "Literary fiction",
+    "count": 1
+  },
+  {
+    "genre": "Romance",
+    "count": 1
+  },
+  {
+    "genre": "Coming-of-age fiction",
+    "count": 1
+  },
+  {
+    "genre": "Fantasy",
+    "count": 2
+  },
+  {
+    "genre": "Psychological fiction",
+    "count": 1
+  },
+  {
+    "genre": "Young adult",
+    "count": 1
+  }
+]

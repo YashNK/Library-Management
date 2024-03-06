@@ -3,7 +3,7 @@ let tbody = document.querySelector('tbody');
 let table = document.querySelector('table');
 let bookname = document.getElementById("name");
 let author = document.getElementById("author");
-let date = document.getElementById("date");
+var date = document.getElementById("date");
 let genre = document.getElementById("genre");
 let valid=[];
 
@@ -50,10 +50,10 @@ function submitForm(event){
 
     let data =
         {
-            "bookname":bookname.value,
-            "author":author.value,
-            "date":date.value,
-            "genre":genre.value,
+            bookname:bookname.value,
+            author:author.value,
+            date:date.value,
+            genre:genre.value,
         }
 
         obj.table.push(data)
@@ -72,7 +72,8 @@ function submitForm(event){
        
 }
 
-document.getElementById("dwnimg").onclick = ()=>{
+document.getElementById("downimg").onclick = ()=>{
+    
     let blob = new Blob([JSON.stringify(obj.table)], {type: "application/json"});
 
 

@@ -1,0 +1,70 @@
+{
+    "Dystopian fiction": [
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "publishedDate": "Oct 9, 1949, 12:00:00 AM",
+      "genre": "Dystopian fiction"
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "publishedDate": "Jun 1, 1932, 12:00:00 AM",
+      "genre": "Dystopian fiction"
+    }],
+    "Classic literature": [
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "publishedDate": "Apr 15, 1960, 12:00:00 AM",
+      "genre": "Classic literature"
+    }],
+    "Literary fiction": [
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "publishedDate": "Feb 1, 1925, 12:00:00 AM",
+      "genre": "Literary fiction"
+    }],
+    "Romance": [
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "publishedDate": "Nov 7, 1813, 12:00:00 AM",
+      "genre": "Romance"
+    }],
+    "Coming-of-age fiction": [
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "publishedDate": "Jan 18, 1925, 12:00:00 AM",
+      "genre": "Coming-of-age fiction"
+    }],
+    "Fantasy": [
+    {
+      "title": "Harry Potter and the Philosopher Stone",
+      "author": "J.K. Rowling",
+      "publishedDate": "Jul 20, 1997, 12:00:00 AM",
+      "genre": "Fantasy"
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.D. Salinger",
+      "publishedDate": "Feb 13, 1937, 12:00:00 AM",
+      "genre": "Fantasy"
+    }],
+    "Psychological fiction": [
+    {
+      "title": "Lord of the Flies",
+      "author": "William Golding",
+      "publishedDate": "Apr 15, 1925, 12:00:00 AM",
+      "genre": "Psychological fiction"
+    }],
+    "Young adult": [
+    {
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "publishedDate": "May 2, 2008, 12:00:00 AM",
+      "genre": "Young adult"
+    }]
+    }
