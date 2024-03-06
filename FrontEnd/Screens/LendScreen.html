@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../StyleSheet/CountCss.css">
+    <link rel="stylesheet" href="../StyleSheet/LendCss.css">
 </head>
 <body>
     <body>
@@ -21,6 +21,50 @@
             <a href="ListScreen.html" class="link">Available Books</a>    
             <a href="LendScreen.html" class="link-active">Lend A Book</a>    
         </div>
+        <div class="container">
+            <label><input type="radio" name="option" value="option1" onclick="showInput('option1')"> Option 1</label><br>
+            <div id="option1Inputs" style="display: none;" class="input-group">
+                <input type="text" name="input1" placeholder="Enter input 1"><br>
+                <input type="text" name="input2" placeholder="Enter input 2"><br>
+            </div>
+
+            <label><input type="radio" name="option" value="option2" onclick="showInput('option2')"> Option 2</label><br>
+            <div id="option2Inputs" style="display: none;" class="input-group">
+                <input type="text" name="input3" placeholder="Enter input 3"><br>
+                <input type="text" name="input4" placeholder="Enter input 4"><br>
+            </div>
+    </div>
+
+        <div class="author-count-table">
+            <table>
+                <thead>
+                    <tr>
+                    <th>
+                        Lend/Return
+                    </th>
+                    <th>
+                        Book Name
+                    </th>
+                    <th>
+                        Lend/Return Date
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <script>
+            function showInput(option) {
+                var inputs = document.querySelectorAll('.input-group');
+                for (var i = 0; i < inputs.length; i++) {
+                    inputs[i].style.display = 'none';
+                }
+                document.getElementById(option + 'Inputs').style.display = 'block';
+            }
+        </script>
     
 </body>
 </html>

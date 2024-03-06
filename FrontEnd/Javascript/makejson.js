@@ -4,8 +4,8 @@ let table = document.querySelector('table');
 let bookname = document.getElementById("name");
 let author = document.getElementById("author");
 let date = document.getElementById("date");
-let genre = document.getElementById("genre");
-
+let gener = document.getElementById("gender");
+let button = document.getElementById("btn");
 let obj={
     table:[]
 };
@@ -22,7 +22,7 @@ function submitForm(event){
                     ${author.value}
                 </td>
                 <td>
-                    ${genre.value}
+                    ${gener.value}
                 </td>
                 <td>
                     ${date.value}
@@ -36,7 +36,7 @@ function submitForm(event){
         "Details":[{
             "author":author.value,
             "date":date.value,
-            "genre":genre.value,
+            "gener":gener.value,
             }
             ]
         }
@@ -52,7 +52,7 @@ function submitForm(event){
        
 }
 
-document.getElementById("dwnbtn").onclick = ()=>{
+document.getElementById("subtn").onclick = ()=>{
     let blob = new Blob([JSON.stringify(obj.table)], {type: "application/json"});
 
 
