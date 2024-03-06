@@ -7,8 +7,7 @@ body{
     background-size: cover;
 }
 .man{
-    width: 200px;
-    height: 200px;
+    width: 230px;
     position: absolute;
     bottom: 58px;
     right: 0;
@@ -100,14 +99,13 @@ form{
 .container-table{
     overflow: auto;
     display: inline-block;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     vertical-align: top;
     width: 49%;
     background-color: rgb(241, 241, 241);
     box-shadow: 0px 0px 30px 10px rgba(42, 11, 8, 0.2);
     height: 650px;
-    padding: 20px;
     border-radius: 10px;
 }
 
@@ -163,7 +161,7 @@ form{
     margin-bottom: 15px;
 }
 .name-input-box:focus, .author-input-box:focus, .genre-box:focus, .date-input-box:focus{
-    border: 2px solid rgb(46, 85, 255);
+    border: 2px solid rgb(84, 115, 255);
     border-radius: 5px;
 }
 .buttons{
@@ -200,6 +198,7 @@ form{
     border-radius: 7px;
 }
 .download-image{
+    position: absolute;
     padding-top: 20px;
     padding-left: 10px;
     width: 20px;
@@ -212,21 +211,28 @@ form{
 }
 
 table{
-    padding: 10px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     border-radius: 6px;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 p{
     margin: 0;
 }
 tr{
     text-align: center;
+    border-bottom: 0.5px solid rgb(255, 255, 255);
 }
-tr, th{
-    border-bottom: 0.5px solid rgb(111, 222, 255);
+th{
+    position: sticky;
+    top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-bottom: 2px solid #3baeca;
 }
 
 .container-table::-webkit-scrollbar {

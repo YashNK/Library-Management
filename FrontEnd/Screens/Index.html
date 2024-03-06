@@ -14,18 +14,18 @@
     </div>
 
     <div class="nav-bar">
-
         <a href="Index.html" class="link-active">Home</a>
         <a href="AuthorScreen.html" class="link">Authors</a>
         <a href="GenreScreen.html" class="link">Genres</a>
-        <a href="YearScreen.html" class="link">Publish Year</a>
+        <a href="YearScreen.html" class="link">Published Year</a>
         <a href="ListScreen.html" class="link">Available Books</a>    
+        <a href="LendScreen.html" class="link">Lend A Book</a>    
     </div>
 
     <form>
         <h4 class="main-heading-top">WELCOME TO</h4>
         <h1 class="main-heading-bottom">PageRealm</h1>
-        <p class="sub-heading">A Perfect Place To Store, Manage And Organize Your Book Collection</p>
+        <p class="sub-heading">A Perfect Place To Store, Manage And Organize Your Book Collection.</p>
         <p class="container-label">Create A New Book Entry:</p>
 
         <div class="container">
@@ -34,11 +34,11 @@
 
         <div class="name-field">
                 <p class="name-title">Book Title:</p>
-                <input id="name" name="name" class="name-input-box" type="text" placeholder="Enter Your Name" required>
+                <input id="name" name="name" class="name-input-box" type="text" placeholder="Enter Book Title" required>
         </div>
         <div class="name-field">
             <p class="author-title">Author Name:</p>
-            <input id="author" name="name" class="author-input-box" type="text" placeholder="Enter Your Name" required>
+            <input id="author" name="name" class="author-input-box" type="text" placeholder="Enter Author Name" required>
         </div>
         <div class="name-field">
             <p class="date-title">Publish Date:</p>
@@ -59,7 +59,7 @@
         </div>
         <div class="buttons">
             <button id="subtn" class="submit-btn" type="submit">Submit</button>
-            <button id="dwnbtn" class="download-btn"><img class="download-image" src="../assests/download.png"></button>
+            <img class="download-image" src="../assests/download.png">
         </div>
     </div>
     </form>
@@ -81,8 +81,9 @@
                 </th>
             </tr>
             </thead>
-            <tbody></tbody>
-        </table>
+            <tbody>
+            </tbody>
+        </table>  
     </div>
 
     <script src="../Javascript/makejson.js">

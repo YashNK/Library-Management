@@ -12,6 +12,26 @@ body{
     position: absolute;
     margin-left: 10px; 
 }
+
+.container{
+    display: inline-block;
+    position: relative;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 380px;
+    text-align: left;
+    padding: 25px;
+    border-radius: 10px;
+    background-image:linear-gradient(rgba(129, 120, 120, 0.75),rgba(106, 88, 88, 0.75)), url("https://c1.wallpaperflare.com/preview/735/282/509/books-book-reading-pages.jpg");
+    background-size: cover;
+
+}
+.sub-heading{
+    text-align: justify;
+}
+
 .site-name{
     font-size: 17px;
     position: absolute;
@@ -41,34 +61,24 @@ body{
     box-shadow: 0px 5px 20px 0px rgb(158, 158, 158);
     margin-bottom: 30px;
 }
-.list-heading{
-    color: white;
-    text-shadow: 0px 0px 50px rgb(0, 229, 255);
-    text-align: center;
 
-}
 .container-table{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: 300px;
-    background-color: aqua;
-}
-.container-table{
+    margin-top: 10px;
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
     vertical-align: top;
-    width: 50%;
-    background-color: rgb(241, 241, 241);
+    width: 60%;
+    background-color: rgb(87, 155, 173);
     box-shadow: 0px 0px 30px 10px rgba(42, 11, 8, 0.2);
-    height: 600px;
+    height: 450px;
     padding: 20px;
     border-radius: 10px;
+
 }
 
 table{
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -80,8 +90,15 @@ tr{
     text-align: center;
 }
 tr, th{
-    border-bottom: 0.5px solid rgb(255, 255, 255);
+    border-bottom: 0.5px solid rgb(111, 222, 255);
 }
+.author-count-table{
+    display: inline-block;
+    width: 30%;
+    margin-left: 80px;
+    margin-top: 50px;
+    vertical-align: top;
+   }
 
 .container-table::-webkit-scrollbar {
     width: 12px;
@@ -94,6 +111,6 @@ tr, th{
 }
 
 .container-table::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    background-color: rgb(254, 249, 249);
+    border-radius: 10px;
 }
