@@ -7,8 +7,7 @@ body{
     background-size: cover;
 }
 .man{
-    width: 200px;
-    height: 200px;
+    width: 230px;
     position: absolute;
     bottom: 58px;
     right: 0;
@@ -163,7 +162,7 @@ form{
     margin-bottom: 15px;
 }
 .name-input-box:focus, .author-input-box:focus, .genre-box:focus, .date-input-box:focus{
-    border: 2px solid rgb(46, 85, 255);
+    border: 2px solid rgb(84, 115, 255);
     border-radius: 5px;
 }
 .buttons{
@@ -226,7 +225,7 @@ tr{
     text-align: center;
 }
 tr, th{
-    border-bottom: 0.5px solid rgb(111, 222, 255);
+    border-bottom: 0.5px solid rgb(255, 255, 255);
 }
 
 .container-table::-webkit-scrollbar {
