@@ -5,13 +5,30 @@ let bookname = document.getElementById("name");
 let author = document.getElementById("author");
 let date = document.getElementById("date");
 let genre = document.getElementById("genre");
+let valid=[];
+
 
 let obj={
-    table:[]
+    table:[],
+    
 };
 
 function submitForm(event){
     event.preventDefault();
+    let isDuplicate=false;
+    
+    console.log(valid);
+    
+    for(var i in valid){
+        if(valid[i]==bookname.value){
+            isDuplicate=true;
+        }
+        
+    }
+        
+    
+    
+    if(isDuplicate==false){
 
     tbody.innerHTML += `
             <tr>
@@ -32,18 +49,21 @@ function submitForm(event){
             `
 
     let data =
-        {"bookname":bookname.value,
-        "Details":[{
+        {
+            "bookname":bookname.value,
             "author":author.value,
             "date":date.value,
             "genre":genre.value,
-            }
-            ]
         }
 
         obj.table.push(data)
 
         console.log(JSON.stringify(obj.table));
+        valid.push(bookname.value);
+    }
+    else{
+        alert("duplicates");       
+    }
 
 
         
@@ -52,7 +72,7 @@ function submitForm(event){
        
 }
 
-document.getElementById("dwnbtn").onclick = ()=>{
+document.getElementById("dwnimg").onclick = ()=>{
     let blob = new Blob([JSON.stringify(obj.table)], {type: "application/json"});
 
 
@@ -73,4 +93,4 @@ document.getElementById("dwnbtn").onclick = ()=>{
 
 
 
-form.addEventListener('submit', submitForm);
+form.addEventListener("submit", submitForm);
