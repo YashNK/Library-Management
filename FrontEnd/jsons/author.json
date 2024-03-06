@@ -1,0 +1,38 @@
+[
+  {
+    "author": "George Orwell",
+    "count": 1
+  },
+  {
+    "author": "Harper Lee",
+    "count": 1
+  },
+  {
+    "author": "F. Scott Fitzgerald",
+    "count": 1
+  },
+  {
+    "author": "Jane Austen",
+    "count": 1
+  },
+  {
+    "author": "J.D. Salinger",
+    "count": 2
+  },
+  {
+    "author": "J.K. Rowling",
+    "count": 1
+  },
+  {
+    "author": "Aldous Huxley",
+    "count": 1
+  },
+  {
+    "author": "William Golding",
+    "count": 1
+  },
+  {
+    "author": "Suzanne Collins",
+    "count": 1
+  }
+]

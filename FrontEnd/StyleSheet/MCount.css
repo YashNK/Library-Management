@@ -1,0 +1,116 @@
+body{
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    height: 100%;
+    margin: 0px;
+    background-image: url("https://printawallpaper.com/wp-content/uploads/2013/08/Blue_White_Polygonal_Mosaic_d.jpg");
+    background-size: cover;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 10px; 
+}
+
+.container{
+    display: inline-block;
+    position: relative;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 380px;
+    text-align: left;
+    padding: 25px;
+    border-radius: 10px;
+    background-image:linear-gradient(rgba(129, 120, 120, 0.75),rgba(106, 88, 88, 0.75)), url("https://c1.wallpaperflare.com/preview/735/282/509/books-book-reading-pages.jpg");
+    background-size: cover;
+
+}
+.sub-heading{
+    text-align: justify;
+}
+
+.site-name{
+    font-size: 17px;
+    position: absolute;
+    margin-left: 60px; 
+    color: rgb(40, 140, 202);
+    font-weight: bold;
+    margin-top: 12px;
+}
+.link{
+    color: rgb(129, 129, 129);
+    margin: 0px 20px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link-active{
+    color: rgb(0, 140, 255);
+    margin: 0px 20px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+.nav-bar{
+    padding: 13px 0px 0px 0px;
+    height: 35px;
+    align-items: center;
+    text-align: right;
+    box-shadow: 0px 5px 20px 0px rgb(158, 158, 158);
+    margin-bottom: 30px;
+}
+
+.container-table{
+    margin-top: 10px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    width: 60%;
+    background-color: rgb(87, 155, 173);
+    box-shadow: 0px 0px 30px 10px rgba(42, 11, 8, 0.2);
+    height: 450px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+table{
+    padding: 20px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 6px;
+}
+
+tr{
+    text-align: center;
+}
+tr, th{
+    border-bottom: 0.5px solid rgb(111, 222, 255);
+}
+.author-count-table{
+    display: inline-block;
+    width: 30%;
+    margin-left: 80px;
+    margin-top: 50px;
+    vertical-align: top;
+   }
+
+.container-table::-webkit-scrollbar {
+    width: 12px;
+}
+
+.container-table::-webkit-scrollbar-track {
+    background-color: rgb(239, 239, 239);
+    -webkit-box-shadow: 0 0 6px rgba(245, 0, 0, 0.3); 
+    border-radius: 10px;
+}
+
+.container-table::-webkit-scrollbar-thumb {
+    background-color: rgb(254, 249, 249);
+    border-radius: 10px;
+}
