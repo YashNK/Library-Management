@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="../StyleSheet/ListCss.css">
 </head>
 <body>
-    <button id="year" onclick="filter(year)">year</button>
-        <button id="author" onclick="filter('author')">author</button>
-        <button id="genre" onclick="filter('genre')">genre</button>
-        
     <div>
         <a href="Index.html">
             <img class="logo" src="../assests/logo.png">
@@ -33,9 +29,9 @@
 
     <div class="filterDiv">
         <p class="filterLabel">Filter by:</p>
-        <button class="authorBtn">Author</button>
-        <button class="genreBtn">Genre</button>
-        <button class="yearBtn">Publish Date</button>
+        <button class="authorBtn" id="author" >Author</button>
+        <button class="genreBtn" id="genre" >Genre</button>
+        <button class="yearBtn" id="year" >Publish Date</button>
     </div>
 
     <div class="container-table">
