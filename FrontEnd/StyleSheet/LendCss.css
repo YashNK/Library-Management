@@ -123,6 +123,10 @@ th{
     border-radius: 5px;
 }
 
+.lendRadio{
+    margin-right: 50px;
+}
+
 .returnSubmit, .lendSubmit{
     border: none;
     padding: 10px;
@@ -138,10 +142,9 @@ th{
 }
 
 .download-image{
+    padding-top: 13px;
     position: absolute;
     width: 20px;
-    margin-top: 13px;
-    margin-left: 7px;
     cursor: pointer;
     opacity: 70%;
     transition: 0.3s;

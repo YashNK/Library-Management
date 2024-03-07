@@ -211,7 +211,7 @@ form{
     text-align: right;
 }
 .exportLable{
-    color: rgb(29, 53, 60);
+    color: rgb(103, 153, 169);
     margin-right: 71px;
     margin-top: 5px;
     font-weight: bold;
@@ -303,9 +303,5 @@ th{
     display: inline-block;
     width: 92%;
     vertical-align: top;
-  }
-  
-  .closebtn:hover {
-    
   }
   

@@ -8,8 +8,10 @@
 </head>
 <body>
     <div>
-        <img class="logo" src="../assests/logo.png">
-        <p class="site-name">PageRealm</p>
+        <a href="Index.html">
+            <img class="logo" src="../assests/logo.png">
+            <p class="site-name">PageRealm</p>
+        </a>
     </div>
     
         <div class="nav-bar">
@@ -33,7 +35,7 @@
             <input type="radio" class="returnRadio" name="option" value="option2" onclick="showInput('option2')">
 
             <div id="option1Inputs" style="display: none;" class="input-group">
-                <input id="lendname" type="text" class="lendBox" name="input1" placeholder="Lend a book">
+                <input id="lendname" type="text" class="lendBox" name="input1" placeholder="Lend a book" required>
                 <!-- <input id="lenddate" type="date" class="lendDate" name="input2"> -->
                 <button class="lendSubmit" onclick="addInput('option1')">
                     Submit
@@ -43,7 +45,7 @@
             </div>
 
             <div id="option2Inputs" style="display: none;" class="input-group">
-                <input id="returnname" type="text" class="returnBox" name="input3" placeholder="Return a book">
+                <input id="returnname" type="text" class="returnBox" name="input3" placeholder="Return a book" required>
                 <!-- <input type="date" class="returnDate" name="input4"> -->
                 <button class="returnSubmit" onclick="addInput('option2')">
                     Submit
