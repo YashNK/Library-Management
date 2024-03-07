@@ -1,14 +1,18 @@
 [
   {
-    "genre": "Romance",
-    "count": 3
-  },
-  {
     "genre": "Horror",
-    "count": 2
+    "count": 4
   },
   {
     "genre": "Drama",
+    "count": 19
+  },
+  {
+    "genre": "Romance",
+    "count": 15
+  },
+  {
+    "genre": "Action",
     "count": 2
   }
 ]

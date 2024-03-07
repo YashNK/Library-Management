@@ -44,17 +44,10 @@ body{
 .list-heading{
     color: rgb(31, 162, 199);
     text-align: center;
-    text-decoration: underline;
-
+    margin: 1px;
 }
 .container-table{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    height: 300px;
-    background-color: aqua;
-}
-.container-table{
+    position: relative;
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
@@ -62,26 +55,80 @@ body{
     width: 50%;
     background-color: rgb(241, 241, 241);
     box-shadow: 0px 0px 30px 10px rgba(42, 11, 8, 0.2);
-    height: 600px;
-    padding: 20px;
-    border-radius: 10px;
+    height: 560px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
 }
 
 table{
-    padding: 10px;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    border-radius: 6px;
+    border-spacing: 0;
 }
 
 tr{
     text-align: center;
-}
-tr, th{
     border-bottom: 0.5px solid rgb(255, 255, 255);
 }
+th{
+    position: sticky;
+    top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-bottom: 2px solid #3baeca;
+}
+.filterDiv{
+    position: relative;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    margin-top: 1.2%;
+    width: 50%;
+    background-color: rgb(88, 150, 159);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.filterLabel{
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+    margin-left: 15%;
+    margin-right: auto;
+    width: 50%;    
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.authorBtn, .genreBtn, .yearBtn{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.authorBtn:hover, .genreBtn:hover, .yearBtn:hover{
+    background-color: rgb(87, 155, 173);
+    color: white;
+}
+.authorBtn:focus, .genreBtn:focus, .yearBtn:focus{
+    background-color: rgb(87, 155, 173);
+    color: white;
+}
+
 
 .container-table::-webkit-scrollbar {
     width: 12px;
