@@ -1,0 +1,14 @@
+[
+  {
+    "genre": "Romance",
+    "count": 3
+  },
+  {
+    "genre": "Horror",
+    "count": 2
+  },
+  {
+    "genre": "Drama",
+    "count": 2
+  }
+]
