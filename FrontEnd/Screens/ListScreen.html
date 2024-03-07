@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../StyleSheet/CountCss.css">
 </head>
 <body>
+    <button id="year" onclick="filter(year)">year</button>
+        <button id="author" onclick="filter('author')">author</button>
+        <button id="genre" onclick="filter('genre')">genre</button>
+        
     <div>
         <a href="Index.html">
             <img class="logo" src="../assests/logo.png">
@@ -45,8 +49,10 @@
             </thead>
             <tbody></tbody>
         </table>
+        
     </div>
-    <!-- <script src="../Javascript/listscreen.js"></script> -->
+
+    
     <script type="module" src="../Javascript/listscreen.js" ></script>
 </body>
 </html>

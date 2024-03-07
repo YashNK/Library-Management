@@ -67,6 +67,7 @@ function submitForm(event){
             "date":formatedDate,
             "genre":genre.value,
         }
+        console.log(data);
 
         obj.table.push(data)
 

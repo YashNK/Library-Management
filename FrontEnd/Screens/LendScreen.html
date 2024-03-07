@@ -34,16 +34,16 @@
 
             <div id="option1Inputs" style="display: none;" class="input-group">
                 <input id="lendname" type="text" class="lendBox" name="input1" placeholder="Lend a book">
-                <input id="lenddate" type="date" class="lendDate" name="input2">
-                <button class="lendSubmit">
+                <!-- <input id="lenddate" type="date" class="lendDate" name="input2"> -->
+                <button class="lendSubmit" onclick="addInput('option1')">
                     Submit
                 </button>
             </div>
 
             <div id="option2Inputs" style="display: none;" class="input-group">
-                <input id="" type="text" class="returnBox" name="input3" placeholder="Return a book">
-                <input type="date" class="returnDate" name="input4">
-                <button class="returnSubmit">
+                <input id="returnname" type="text" class="returnBox" name="input3" placeholder="Return a book">
+                <!-- <input type="date" class="returnDate" name="input4"> -->
+                <button class="returnSubmit" onclick="addInput('option2')">
                     Submit
                 </button>
             </div>
@@ -61,9 +61,6 @@
                     <th>
                         Book Name
                     </th>
-                    <th>
-                        Lend/Return Date
-                    </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -71,6 +68,7 @@
                 </tbody>
             </table>
         </div>
+        <img id="dwnimg" class="download-image" src="../assests/download.png" onclick="getjson()">
 
         <script src="../Javascript/lendscreen.js">
             

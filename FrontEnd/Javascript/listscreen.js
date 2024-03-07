@@ -1,62 +1,111 @@
-// fetch('../jsons/data.json')
-//     .then(response => response.json())
-//     .then( values => console.log(values[]))
-//     .catch(error => console.error('Error:', error));
 
 "use strict";
 
-import value from "../jsons/data.json" assert {type : 'json'};
+import author from "../jsons/Authorfiltering.json" assert {type : 'json'};
+import genres from "../jsons/Genrefiltering.json" assert {type : 'json'};
+import year from "../jsons/Yearfiltering.json" assert {type : 'json'};
+let trow = document.querySelector('tr');
 let tbody = document.querySelector('tbody');
-document.addEventListener("DOMContentLoaded",()=>{
+let tables = document.querySelector('table');
+
+document.getElementById("year").onclick=()=>{
+    
+    
+    tbody.innerHTML='';
     
         
-    for(let i in value){
-        for(let j=0;j<value[i].length;j++){
+    for(let i in year){
+        for(let j=0;j<year[i].length;j++){
             tbody.innerHTML += `
             <tr>
                 <td>
-                    ${value[i][j].title}
+                    ${year[i][j].title}
                 </td>
                 <td>
-                    ${value[i][j].author}
+                    ${year[i][j].author}
                 </td>
                 <td>
-                    ${value[i][j].genre}
+                    ${year[i][j].genre}
                 </td>
                 <td>
-                    ${value[i][j].publishedDate}
+                    ${year[i][j].publishedDate}
+                </td>
+
+            </tr>
+            
+            `
+
+        }
+    }
+    
+}
+
+
+
+document.getElementById("genre").onclick=()=>{
+
+    tbody.innerHTML='';     
+    
+    
+        
+    for(let i in genres){
+        for(let j=0;j<genres[i].length;j++){
+            tbody.innerHTML += `
+            <tr>
+                <td>
+                    ${genres[i][j].title}
+                </td>
+                <td>
+                    ${genres[i][j].author}
+                </td>
+                <td>
+                    ${genres[i][j].genre}
+                </td>
+                <td>
+                    ${genres[i][j].publishedDate}
                 </td>
 
             </tr>
             `
+            
 
     
 
         }
     }
     
+}
+
+document.getElementById("author").onclick=()=>{
+
+    tbody.innerHTML='';     
     
-    // for(let i=0;i<value.length;i++){
-
-    //     // console.log(i);
-    //     tbody.innerHTML += `
-    //         <tr>
-    //             <td>
-    //                 ${value[i].bookname}
-    //             </td>
-    //             <td>
-    //                 ${value[i].author}
-    //             </td>
-    //             <td>
-    //                 ${value[i].genre}
-    //             </td>
-    //             <td>
-    //                 ${value[i].date}
-    //             </td>
-
-    //         </tr>
-    //         `
-
-    // }
     
-})
+        
+    for(let i in author){
+        for(let j=0;j<author[i].length;j++){
+            tbody.innerHTML += `
+            <tr>
+                <td>
+                    ${author[i][j].title}
+                </td>
+                <td>
+                    ${author[i][j].author}
+                </td>
+                <td>
+                    ${author[i][j].genre}
+                </td>
+                <td>
+                    ${author[i][j].publishedDate}
+                </td>
+
+            </tr>
+            `
+            
+
+    
+
+        }
+    }
+    
+}

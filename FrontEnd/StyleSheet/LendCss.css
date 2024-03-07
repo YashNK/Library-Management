@@ -29,6 +29,13 @@ body{
     transition: 0.5s;
 }
 
+.download-image{
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 20px;
+}
+
 .link-active{
     color: rgb(0, 140, 255);
     margin: 0px 20px 0px 0px;
