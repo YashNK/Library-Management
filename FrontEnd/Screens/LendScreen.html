@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../StyleSheet/CountCss.css">
+    <title>Lend/Return</title>
+    <link rel="stylesheet" href="../StyleSheet/LendCss.css">
 </head>
 <body>
-    <body>
-        <div>
-            <img class="logo" src="../assests/logo.png">
-            <p class="site-name">PageRealm</p>
-        </div>
+    <div>
+        <img class="logo" src="../assests/logo.png">
+        <p class="site-name">PageRealm</p>
+    </div>
     
         <div class="nav-bar">
             <a href="Index.html" class="link">Home</a>
@@ -21,6 +20,67 @@
             <a href="ListScreen.html" class="link">Available Books</a>    
             <a href="LendScreen.html" class="link-active">Lend A Book</a>    
         </div>
+
+        <div class="container">
+            <label>
+                Lend
+            </label>
+            <input type="radio" name="option" value="option1" class="lendRadio" onclick="showInput('option1')">
+
+            <label>
+                Return
+            </label>
+            <input type="radio" class="returnRadio" name="option" value="option2" onclick="showInput('option2')">
+
+            <div id="option1Inputs" style="display: none;" class="input-group">
+                <input type="text" class="lendBox" name="input1" placeholder="Lend a book">
+                <input type="date" class="lendDate" name="input2">
+                <button class="lendSubmit">
+                    Submit
+                </button>
+            </div>
+
+            <div id="option2Inputs" style="display: none;" class="input-group">
+                <input type="text" class="returnBox" name="input3" placeholder="Return a book">
+                <input type="date" class="returnDate" name="input4">
+                <button class="returnSubmit">
+                    Submit
+                </button>
+            </div>
+
+        </div>
+
+        <div class="author-count-table">
+
+            <table>
+                <thead>
+                    <tr>
+                    <th>
+                        Lend/Return
+                    </th>
+                    <th>
+                        Book Name
+                    </th>
+                    <th>
+                        Lend/Return Date
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <script>
+            function showInput(option) {
+                var inputs = document.querySelectorAll('.input-group');
+                for (var i = 0; i < inputs.length; i++) {
+                    inputs[i].style.display = 'none';
+                }
+                document.getElementById(option + 'Inputs').style.display = 'block';
+            }
+        </script>
     
 </body>
 </html>
