@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PageRealm</title>
     <link rel="stylesheet" href="../StyleSheet/CreateScreen.css">
 </head>
 
 <body>
+    <div id="customAlert" class="custom-alert">
+        <p class="alert-message">This book already exists in our records. Please provide new book details</p>
+        <span class="closebtn" onclick="closeCustomAlert()">&times;</span>
+    </div>
+
     <div>
         <img class="logo" src="../assests/logo.png">
         <p class="site-name">PageRealm</p>
     </div>
 
     <div class="nav-bar">
-
         <a href="Index.html" class="link-active">Home</a>
         <a href="AuthorScreen.html" class="link">Authors</a>
         <a href="GenreScreen.html" class="link">Genres</a>
-        <a href="YearScreen.html" class="link">Publish Year</a>
+        <a href="YearScreen.html" class="link">Published Year</a>
         <a href="ListScreen.html" class="link">Available Books</a>    
+        <a href="LendScreen.html" class="link">Lend A Book</a>    
     </div>
 
     <form>
@@ -42,13 +47,13 @@
         </div>
         <div class="name-field">
             <p class="date-title">Publish Date:</p>
-            <input id="date" name="name" class="date-input-box" type="date" placeholder="Enter Publish Date" required>
+            <input id="date" max="<?php echo date('Y-m-d'); ?>" name="name" class="date-input-box" type="date" placeholder="Enter Publish Date" required>
         </div>
         
         <div>
             <p class="genre-title">Genre</p>
                 <select class="genre-box" name="gender" id="genre" required>
-                <option value="">Choose</option>
+                <option value=""> - </option>
                 <option value="Horror">Horror</option>
                 <option value="Romance">Romance</option>
                 <option value="Action">Action</option>
@@ -59,7 +64,7 @@
         </div>
         <div class="buttons">
             <button id="subtn" class="submit-btn" type="submit">Submit</button>
-            <button id="dwnbtn" class="download-btn"><img class="download-image" src="../assests/download.png"></button>
+            <img id="dwnimg" class="download-image" src="../assests/download.png">
         </div>
     </div>
     </form>
@@ -81,9 +86,13 @@
                 </th>
             </tr>
             </thead>
-            <tbody></tbody>
-        </table>
+            <tbody>
+                
+            </tbody>
+        </table>  
     </div>
+    
+    
 
     <script src="../Javascript/makejson.js">
         

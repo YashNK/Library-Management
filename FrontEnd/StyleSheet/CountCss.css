@@ -42,9 +42,9 @@ body{
     margin-bottom: 30px;
 }
 .list-heading{
-    color: white;
-    text-shadow: 0px 0px 50px rgb(0, 229, 255);
+    color: rgb(31, 162, 199);
     text-align: center;
+    text-decoration: underline;
 
 }
 .container-table{

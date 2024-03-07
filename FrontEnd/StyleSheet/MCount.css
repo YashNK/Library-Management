@@ -29,7 +29,8 @@ body{
 
 }
 .sub-heading{
-    text-align: justify;
+    text-align:center;
+    justify-content: center;
 }
 
 .site-name{
@@ -45,6 +46,7 @@ body{
     margin: 0px 20px 0px 0px;
     text-align: center;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .link-active{
@@ -52,6 +54,10 @@ body{
     margin: 0px 20px 0px 0px;
     text-align: center;
     text-decoration: none;
+    transition: 0.5s;
+}
+.link:hover, .link-active:hover{
+    color: rgb(0, 0, 0);
 }
 .nav-bar{
     padding: 13px 0px 0px 0px;
@@ -63,8 +69,7 @@ body{
 }
 
 .container-table{
-    margin-top: 10px;
-    overflow: auto;
+    margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
     vertical-align: top;
@@ -78,9 +83,9 @@ body{
 }
 
 table{
-    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: white;
-    margin-left: auto;
     margin-right: auto;
     width: 100%;
     border-radius: 6px;
@@ -88,29 +93,38 @@ table{
 
 tr{
     text-align: center;
+    border-bottom: 0.5px solid rgb(87, 155, 173);
 }
-tr, th{
-    border-bottom: 0.5px solid rgb(111, 222, 255);
+ th{
+    border-bottom: 0.5px solid rgb(87, 155, 173);
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    
 }
-.author-count-table{
+
+.count-table{
     display: inline-block;
-    width: 30%;
-    margin-left: 80px;
-    margin-top: 50px;
+    width: 50%;
     vertical-align: top;
+    margin-left: 45px;
+    overflow: auto;
+    height: 70%;
+
+    
    }
 
-.container-table::-webkit-scrollbar {
+.count-table::-webkit-scrollbar {
     width: 12px;
 }
 
-.container-table::-webkit-scrollbar-track {
-    background-color: rgb(239, 239, 239);
+.count-table::-webkit-scrollbar-track {
+    background-color: rgb(239, 235, 235);
     -webkit-box-shadow: 0 0 6px rgba(245, 0, 0, 0.3); 
     border-radius: 10px;
 }
 
-.container-table::-webkit-scrollbar-thumb {
-    background-color: rgb(254, 249, 249);
-    border-radius: 10px;
+.countr-table::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius:10px;
 }
