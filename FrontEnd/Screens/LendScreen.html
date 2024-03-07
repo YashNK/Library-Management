@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lend/Return</title>
+    <title>Lend & Return</title>
     <link rel="stylesheet" href="../StyleSheet/LendCss.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
             <a href="AuthorScreen.html" class="link">Authors</a>
             <a href="GenreScreen.html" class="link">Genres</a>
             <a href="YearScreen.html" class="link">Published Year</a>
-            <a href="ListScreen.html" class="link">Available Books</a>    
+            <a href="ListScreen.html" class="link">Book Zone</a>    
             <a href="LendScreen.html" class="link-active">Lend A Book</a>    
         </div>
 
@@ -38,6 +38,8 @@
                 <button class="lendSubmit" onclick="addInput('option1')">
                     Submit
                 </button>
+                
+                <img id="dwnimg" class="download-image" src="../assests/download-black.png">
             </div>
 
             <div id="option2Inputs" style="display: none;" class="input-group">
@@ -46,11 +48,12 @@
                 <button class="returnSubmit" onclick="addInput('option2')">
                     Submit
                 </button>
+                <img id="dwnimg" class="download-image" src="../assests/download-black.png">
             </div>
 
         </div>
 
-        <div class="author-count-table">
+        <div class="container-table">
 
             <table>
                 <thead>

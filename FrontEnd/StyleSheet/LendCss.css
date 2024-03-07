@@ -56,28 +56,32 @@ body{
 }
 .input-group{
     display: inline-block;
+    padding: 10px 0px 0px 0px;
 }
 .container{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-bottom: 20px;
-    height: 100%;
     text-align: center;
 }
+.container-table{
+    position: relative;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    margin-top: 20px;
+    width: 40%;
+    background-color: rgb(241, 241, 241);
+    height: 560px;
+    border-radius: 10px;
+}
+
 table{
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    border-radius: 6px;
-    border-collapse: separate;
+    width: 100%;
     border-spacing: 0;
 }
-p{
-    margin: 0;
-}
+
 tr{
     text-align: center;
     border-bottom: 0.5px solid rgb(255, 255, 255);
@@ -105,20 +109,45 @@ th{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-.lendBox, .lendDate, .returnBox, .returnDate{
-    border: none;
+.lendBox, .returnBox{
+    border: 2px solid rgb(114, 137, 239);
+    border-radius: 10px;
     padding: 10px;
     margin: 5px;
     background-color: white;
     border-radius: 10px;
+    
+}
+.lendBox:focus, .lendDate:focus{
+    border: 2px solid rgb(0, 47, 255);
+    border-radius: 5px;
 }
 
 .returnSubmit, .lendSubmit{
     border: none;
     padding: 10px;
-    font-size: 10px;
     cursor: pointer;
     margin: 5px;
     background-color: white;
     border-radius: 10px;
+    transition: 0.2s;
 }
+.returnSubmit:hover, .lendSubmit:hover{
+    background-color: rgb(87, 155, 173);
+    color: white;
+}
+
+.download-image{
+    position: absolute;
+    width: 20px;
+    margin-top: 13px;
+    margin-left: 7px;
+    cursor: pointer;
+    opacity: 70%;
+    transition: 0.3s;
+}
+ .download-image:hover{
+    opacity: 100%;
+}
+
+ 

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Available Books</title>
-    <link rel="stylesheet" href="../StyleSheet/CountCss.css">
+    <title>BookZone</title>
+    <link rel="stylesheet" href="../StyleSheet/ListCss.css">
 </head>
 <body>
     <button id="year" onclick="filter(year)">year</button>
@@ -23,12 +23,21 @@
         <a href="AuthorScreen.html" class="link">Authors</a>
         <a href="GenreScreen.html" class="link">Genres</a>
         <a href="YearScreen.html" class="link">Published Year</a>
-        <a href="ListScreen.html" class="link-active">Available Books</a> 
+        <a href="ListScreen.html" class="link-active">Book Zone</a> 
         <a href="LendScreen.html" class="link">Lend A Book</a>       
     </div>  
+
     <div>
-        <h1 class="list-heading">Available Books</h1>
+        <h1 class="list-heading">BookZone</h1>
     </div>
+
+    <div class="filterDiv">
+        <p class="filterLabel">Filter by:</p>
+        <button class="authorBtn">Author</button>
+        <button class="genreBtn">Genre</button>
+        <button class="yearBtn">Publish Date</button>
+    </div>
+
     <div class="container-table">
         <table>
             <thead>
@@ -43,7 +52,7 @@
                     Genre
                 </th>
                 <th>
-                    Publish Date
+                    Published Year
                 </th>
             </tr>
             </thead>
