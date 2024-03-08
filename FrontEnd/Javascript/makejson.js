@@ -7,10 +7,7 @@ let date = document.getElementById("date");
 let genre = document.getElementById("genre");
 let valid=[];
 
-let obj={
-    table:[],
-    
-};
+let tables=[];
 
 const today = new Date().toISOString().split('T')[0];
 document.getElementById('date').setAttribute('max', today);
@@ -28,7 +25,7 @@ function submitForm(event){
     event.preventDefault();
     let isDuplicate=false;
     
-    console.log(valid);
+    // console.log(valid);
 
     date.max = new Date().toLocaleDateString('fr-ca')
     let formatedDate = [date.value.split("-")[2],"-",date.value.split("-")[1],"-",date.value.split("-")[0]].join("")
@@ -67,20 +64,21 @@ function submitForm(event){
             "date":formatedDate,
             "genre":genre.value,
         }
-        console.log(data);
+        // console.log(data);
 
-        obj.table.push(data)
+        tables.push(data)
 
-        console.log(JSON.stringify(obj.table));
+        console.log(JSON.stringify(tables));
         valid.push(bookname.value);
     }
     else{
         showCustomAlert()      
     }
+    console.log(tables);
 }
 
 document.getElementById("dwnimg").onclick = ()=>{
-    let blob = new Blob([JSON.stringify(obj.table)], {type: "application/json"});
+    let blob = new Blob([JSON.stringify(tables)], {type: "application/json"});
 
 
     let url = URL.createObjectURL(blob);
