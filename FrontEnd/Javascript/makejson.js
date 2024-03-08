@@ -89,10 +89,10 @@ document.getElementById("dwnimg").onclick = ()=>{
     downloadLink.href = url;
     downloadLink.download = 'data.json';
 
-    document.body.appendChild(downloadLink);
+    // document.body.appendChild(downloadLink);
 
     downloadLink.click();
-    document.body.removeChild(downloadLink);
+    // document.body.removeChild(downloadLink);
 }
 
 form.addEventListener("submit", submitForm);

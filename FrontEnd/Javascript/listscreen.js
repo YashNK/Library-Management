@@ -1,5 +1,5 @@
 
-"use strict";
+// "use strict";
 
 import author from "../jsons/Authorfiltering.json" assert {type : 'json'};
 import genres from "../jsons/Genrefiltering.json" assert {type : 'json'};
@@ -67,10 +67,7 @@ document.getElementById("genre").onclick=()=>{
 
             </tr>
             `
-            
-
-    
-
+       
         }
     }
     

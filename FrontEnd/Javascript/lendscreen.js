@@ -2,7 +2,7 @@ let lendname = document.getElementById('lendname');
 let returnname = document.getElementById('returnname');
 let tbody = document.querySelector('tbody');
 let data = [];
-let ldata={};
+let bookname;
 
 
 function showInput(option) {
@@ -15,10 +15,14 @@ function showInput(option) {
 
 function addInput(option){
     
-    
-        if(option+'Inputs'=="option1Inputs"){
-            let bookname = lendname.value;
-            let lend=bookname;
+        
+        if(option+'Inputs'=="option1Inputs" ){
+            bookname = lendname.value;
+            if(bookname!=''){
+            let ldata={
+                status:"Lend",
+                book:bookname
+            }
             data.push(ldata);
             tbody.innerHTML += `
             <tr>
@@ -31,14 +35,18 @@ function addInput(option){
                 
 
             </tr>
-            ` 
+
+            `
+        } 
             
             
         }
-        else{
-            let bookname = returnname.value;
-            ldata={
-                return:bookname
+        else {
+            bookname=returnname.value;
+            if(bookname!=''){
+            let ldata={
+                status:"Return",
+                book:bookname
             }
             
             data.push(ldata);
@@ -54,6 +62,8 @@ function addInput(option){
 
             </tr>
             `    
+            
+        }
             
         }
         
